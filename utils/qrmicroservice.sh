@@ -56,7 +56,9 @@ function stop_app() {
         echo "Going to stop process having PID $application_pid"
         kill -9 $application_pid
         if [ $? -eq 0 ]; then
-            echo "Process stopped successfully"
+            echo "Process stopped successfully. Cleaning up..."
+            rm process_id.txt nohup.out
+            echo "    ✔ DONE."
         else
             echo "Failed to stop process having PID $application_pid"
         fi
