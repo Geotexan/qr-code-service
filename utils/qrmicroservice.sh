@@ -39,6 +39,7 @@ function start_app() {
         echo "Process successfully running having PID $app_pid"
         # write if success
         echo $app_pid > process_id.txt
+        echo "    ✔ DONE."
     else
         echo "Process stopped before reached to steady state"
     fi

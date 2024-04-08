@@ -1,0 +1,8 @@
+[Unit]
+Description=QR code generator service.
+
+[Service]
+ExecStart=/bin/bash /home/frbogado/src/qr-code-service/utils/qrmicroservice.sh start
+
+[Install]
+WantedBy=multi-user.target
