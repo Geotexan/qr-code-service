@@ -3,3 +3,9 @@ bash_unit
 static/*
 !static/index.html
 VERSION
+process_id.txt
+nohup.out
+bin/
+lib/
+lib64
+pyvenv.cfg
